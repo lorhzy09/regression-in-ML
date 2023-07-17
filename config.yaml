@@ -33,7 +33,7 @@ source: 'https://github.com/carpentries/workbench-template-rmd' # FIXME
 branch: 'main'
 
 # Who to contact if there are any issues
-contact: 'team@carpentries.org' # FIXME
+contact: 'lorhu09@g.ucla.edu' # FIXME
 
 # Navigation ------------------------------------------------
 #
@@ -60,6 +60,7 @@ contact: 'team@carpentries.org' # FIXME
 # Order of episodes in your lesson
 episodes: 
 - introduction.Rmd
+- What is a Regression Model? 
 
 # Information for Learners
 learners: 
