@@ -33,7 +33,7 @@ source: 'https://github.com/carpentries/workbench-template-rmd' # FIXME
 branch: 'main'
 
 # Who to contact if there are any issues
-contact: 'lorhu09@g.ucla.edu' # FIXME
+contact: 'lorhu09@ucla.edu' # FIXME
 
 # Navigation ------------------------------------------------
 #
