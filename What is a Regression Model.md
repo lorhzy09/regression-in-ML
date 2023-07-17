@@ -1,5 +1,5 @@
 ---
-title: "Using RMarkdown"
+title: "What is a Regression Model?"
 teaching: 10
 exercises: 2
 ---
