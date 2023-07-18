@@ -60,7 +60,7 @@ contact: 'lorhu09@ucla.edu' # FIXME
 # Order of episodes in your lesson
 episodes:
 - introduction.Rmd
-- What is a Regression Model.Rmd
+- Introducing Regression Models.Rmd
 
 # Information for Learners
 learners:
