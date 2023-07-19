@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
-<title>Lesson Title: All in One View</title>
+<title>Regression in Machine Learning: All in One View</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="../assets/styles.css">
 <script src="../assets/scripts.js" type="text/javascript"></script><!-- mathjax --><script type="text/x-mathjax-config">
@@ -65,7 +65,7 @@
       <img class="small-logo" alt="Carpentries Incubator" src="../assets/images/incubator-logo-sm.svg">
 </div>
     <div class="lesson-title-md">
-      Lesson Title
+      Regression in Machine Learning
     </div>
     <div class="search-icon-sm">
       <!-- TODO: do not show until we have search
@@ -76,7 +76,7 @@
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 <li class="nav-item">
           <span class="lesson-title">
-            Lesson Title
+            Regression in Machine Learning
           </span>
         </li>
         <li class="nav-item">
@@ -106,7 +106,7 @@
   </div>
 <!--/div.container-fluid -->
 </nav><div class="col-md-12 mobile-title">
-  Lesson Title
+  Regression in Machine Learning
 </div>
 
 <aside class="col-md-12 lesson-progress"><div style="width: %" class="percentage">
@@ -446,7 +446,7 @@ any links that you are not going to use.
  -->
 </section></section><section id="aio-Introducing Regression Models"><p>Content from <a href="Introducing%20Regression%20Models.html">Introducing Regression Models</a></p>
 <hr>
-<p> Last updated on 2023-07-18 | 
+<p> Last updated on 2023-07-19 | 
         
         <a href="https://github.com/lorhzy09/regression-in-ML/edit/main/episodes/Introducing%20Regression%20Models.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time <i aria-hidden="true" data-feather="clock"></i> 12 minutes </p>
@@ -472,13 +472,92 @@ any links that you are not going to use.
 <h3 class="card-title">Objectives</h3>
 <ul>
 <li>Explain what a Regression Model is.</li>
-<li>Understand its usages and interpret it in real life context</li>
+<li>Recognize a Simple Linear Regression Model.</li>
+<li>Understand its usages and interpret it in real life context.</li>
 </ul>
 </div>
 </div>
 </div>
 </div>
-</div></section>
+</div>
+<section id="what-is-a-regression"><h2 class="section-heading">What is a “Regression”?<a class="anchor" aria-label="anchor" href="#what-is-a-regression"></a>
+</h2>
+<hr class="half-width">
+<p>Regression analysis is a core concept in machine learning,
+specifically supervised learning where our dataset has both input
+features and output labels. The goal is to determine a relationship
+amongst variables by analyzing how one affects the others.</p>
+<p>The real life example that we’ll work in the lesson is related to
+movies! Imagine if you are a producer who wants to know the success of a
+movie before it is released. You have a <a href="https://www.kaggle.com/datasets/tmdb/tmdb-movie-metadata" class="external-link">dataset</a>
+of around 5000 films, containing information on their ratings,
+popularity, etc… How can we predict the revenue based on the ratings or
+popularity of a certain film? Understanding regression models may allow
+you to answer such questions.</p>
+<div id="keypoints1" class="callout keypoints">
+<div class="callout-square">
+<i class="callout-icon" data-feather="key"></i>
+</div>
+<div class="callout-inner">
+<h3 class="callout-title">Keypoints<a class="anchor" aria-label="anchor" href="#keypoints1"></a>
+</h3>
+<div class="callout-content">
+<p><strong>Definition</strong>: Regression models are mathematical
+methods that predicts a continuous outcome (usually called y) based on
+the value of one or more predictor variables (x).</p>
+<p><strong>Motivation</strong>: Determine the nature of the relationship
+between the two numerical variables and quantify it</p>
+</div>
+</div>
+</div>
+</section><section id="what-is-an-slr"><h2 class="section-heading">What is an SLR?<a class="anchor" aria-label="anchor" href="#what-is-an-slr"></a>
+</h2>
+<hr class="half-width">
+<p>The most basic regression model and well-known algorithm is the
+<em>Simple Linear Regression Model (SLR)</em>, which we will focus on in
+this introductory modual.</p>
+<p>A linear regression line has an equation of the form <span class="math inline">\(Y = \beta_1x + \beta_0 + \epsilon\)</span></p>
+<p><span class="math inline">\(\beta_1\)</span>: slope of line</p>
+<p><span class="math inline">\(\beta_0\)</span>: intercept</p>
+<p><span class="math inline">\(X\)</span>: explanatory variable</p>
+<p><span class="math inline">\(Y\)</span>: dependent variable</p>
+<p><span class="math inline">\(\epsilon\)</span>: difference between our
+predicted value from the regression line and the actual vale.</p>
+<div id="slr-in-action" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<div id="slr-in-action" class="callout-inner">
+<h3 class="callout-title">SLR in Action?<a class="anchor" aria-label="anchor" href="#slr-in-action"></a>
+</h3>
+<div class="callout-content">
+<p>Think about a problem in your academic field or everyday life where
+an SLR model could help you solve?</p>
+</div>
+</div>
+</div>
+<div id="accordionSolution1" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
+  <h4 class="accordion-header" id="headingSolution1">
+  Possible Ideas:
+  </h4>
+</button>
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div class="accordion-body">
+<ul>
+<li>Predict film revenue based on their ratings</li>
+<li>Predict wine price by its date</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<!-- 
+Place links that you need to refer to multiple times across pages here. Delete
+any links that you are not going to use. 
+ -->
+</section></section>
 </div>
     </main>
 </div>
@@ -521,14 +600,14 @@ any links that you are not going to use.
   "@id": "https://lorhzy09.github.io/regression-in-ML/instructor/aio.html",
   "dct:conformsTo": "https://bioschemas.org/profiles/TrainingMaterial/1.0-RELEASE",
   "description": "A Carpentries Lesson teaching foundational data and coding skills to researchers worldwide",
-  "keywords": "Statistical Regression, Machine Learning, The Carpentries",
+  "keywords": "Statistis, Regression, Machine Learning, The Carpentries",
   "name": "All in One View",
   "creativeWorkStatus": "active",
   "url": "https://lorhzy09.github.io/regression-in-ML/instructor/aio.html",
   "identifier": "https://lorhzy09.github.io/regression-in-ML/instructor/aio.html",
-  "dateCreated": "2023-07-18",
-  "dateModified": "2023-07-18",
-  "datePublished": "2023-07-18"
+  "dateCreated": "2003-07-17",
+  "dateModified": "2023-07-19",
+  "datePublished": "2023-07-19"
 }
 
   </script><script>
