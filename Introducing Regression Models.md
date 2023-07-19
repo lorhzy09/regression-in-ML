@@ -23,7 +23,7 @@ exercises: 2
 
 Regression analysis is a core concept in machine learning, specifically supervised learning where our dataset has both input features and output labels. The goal is to determine a relationship amongst variables by analyzing how one affects the others. 
 
-The real life example that we'll work in the lesson is related to movies! Imagine if you are a producer who wants to know the success of a movie before it is released. You have a [dataset](https://www.kaggle.com/datasets/tmdb/tmdb-movie-metadata) of around 5000 films, containing information on their ratings, popularity, etc... 
+The example that we'll work with in this lesson is related to movies. Imagine if you are a producer who wants to know the success of a movie before it is released. You have a [dataset](https://www.kaggle.com/datasets/tmdb/tmdb-movie-metadata) of around 5000 films, containing information on their ratings, popularity, etc... 
 How can we predict the revenue based on the ratings or popularity of a certain film? Understanding regression models may allow you to answer such questions. 
 
 ::::::::::::::::::::::::::::::::::::: keypoints
@@ -56,7 +56,7 @@ $X$: explanatory variable
 
 $Y$: dependent variable
 
-$\epsilon$: difference between our predicted value from the regression line and the actual vale. 
+$\epsilon$: difference between our predicted value from the regression line and the actual value 
 
 
 :::::::::::::::::::::::::::::::::::::: challenge
@@ -79,3 +79,28 @@ Think about a problem in your academic field or everyday life where an SLR  mode
 
 
 
+### How does it apply to a real life scenario? 
+
+
+Now that you know about the components of a simple linear regression model, take some time to think about how it may apply to our movies dataset. 
+
+
+:::::::::::::::::::::::::::::::::::::: challenge
+
+Consider 1) ratings and 2) revenues related to movies. How might these two variables fit into an SLR? 
+
+:::::::::::::: solution
+
+Ratings might be seen as $X$, our explanatory variable, and revenue as $Y$, the dependent variable. We could construct a linear relationships where ratings are used to predict revenue in the form of $\hat{Revenue} = \beta_1 ratings + \beta_0 + \epsilon$. 
+
+:::::::::::::::::::::::::
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
+## Summary
+
+::::::::::::::::::::::::::::::::::::: keypoints
+
+In this episode, we learned what a regression Model, and now can identify a Simple Linear Regression Model in context. In future episodes, we will examine how to actually construct the relationships, by finding $\beta_1$, $\beta_0$. 
+
+::::::::::::::::::::::::::::::::::::::::::::::::
