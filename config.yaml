@@ -11,13 +11,13 @@
 carpentry: 'incubator'
 
 # Overall title for pages.
-title: 'Lesson Title' # FIXME
+title: 'Regression in Machine Learning' # FIXME
 
 # Date the lesson was created (YYYY-MM-DD, this is empty by default)
-created: ~ # FIXME
+created: 2003-07-17
 
 # Comma-separated list of keywords for the lesson
-keywords: 'Statistical Regression, Machine Learning, The Carpentries' # FIXME
+keywords: 'Statistis, Regression, Machine Learning, The Carpentries' # FIXME
 
 # Life cycle stage of the lesson
 # possible values: pre-alpha, alpha, beta, stable
