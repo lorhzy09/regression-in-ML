@@ -59,7 +59,6 @@ contact: 'lorhu09@ucla.edu' # FIXME
 
 # Order of episodes in your lesson
 episodes:
-- introduction.Rmd
 - Introducing Regression Models.Rmd
 
 # Information for Learners
