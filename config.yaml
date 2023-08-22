@@ -17,11 +17,11 @@ title: 'Regression in Machine Learning' # FIXME
 created: 2003-07-17
 
 # Comma-separated list of keywords for the lesson
-keywords: 'Statistis, Regression, Machine Learning, The Carpentries' # FIXME
+keywords: 'Statistis, Regression, Machine Learning, The Carpentries, R' # FIXME
 
 # Life cycle stage of the lesson
 # possible values: pre-alpha, alpha, beta, stable
-life_cycle: 'pre-alpha' # FIXME
+life_cycle: 'alpha' # FIXME
 
 # License of the lesson
 license: 'CC-BY 4.0'
